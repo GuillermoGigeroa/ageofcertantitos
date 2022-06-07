@@ -6,7 +6,8 @@ public class ArmaNoExisteException extends Exception {
 
 	@Override
 	public String getMessage() {
-		return "El arma no existe. Nullpointer catcher.";
+		// Nullpointer catcher
+		return "El arma no existe.";
 	}
 	
 	

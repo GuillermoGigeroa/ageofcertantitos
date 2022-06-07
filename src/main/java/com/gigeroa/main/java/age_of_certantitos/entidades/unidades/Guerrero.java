@@ -1,5 +1,6 @@
 package com.gigeroa.main.java.age_of_certantitos.entidades.unidades;
 
+import com.gigeroa.main.java.age_of_certantitos.entidades.Posicion;
 import com.gigeroa.main.java.age_of_certantitos.entidades.Unidad;
 
 public class Guerrero extends Unidad {
@@ -9,6 +10,7 @@ public class Guerrero extends Unidad {
 		setVida(GUERRERO_VIDA);
 		setNombre("Guerrero");
 		setPotenciaDeAtaque(GUERRERO_POTENCIA);
+		setPosicion(new Posicion());
 	}
 
 	@Override

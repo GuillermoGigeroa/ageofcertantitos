@@ -9,6 +9,7 @@ public abstract class Unidad implements Persona {
 	protected final static Integer ARQUERO_VIDA = 100;
 	private Integer vida;
 	private Integer potenciaDeAtaque;
+	private Posicion posicion;
 
 	public Unidad() {
 
@@ -51,6 +52,14 @@ public abstract class Unidad implements Persona {
 	
 	public void morir() {
 		Util.escribir(getNombre() + " ha muerto.");
+	}
+
+	public Posicion getPosicion() {
+		return posicion;
+	}
+
+	public void setPosicion(Posicion posicion) {
+		this.posicion = posicion;
 	}
 
 }
