@@ -1,6 +1,6 @@
-package com.gigeroa.main.java.age_of_certantitos.entities.units;
+package com.gigeroa.main.java.age_of_certantitos.entidades.unidades;
 
-import com.gigeroa.main.java.age_of_certantitos.entities.Unidad;
+import com.gigeroa.main.java.age_of_certantitos.entidades.Unidad;
 
 public class Guerrero extends Unidad {
 	private String nombre;

@@ -1,7 +1,7 @@
-package com.gigeroa.main.java.age_of_certantitos.services;
+package com.gigeroa.main.java.age_of_certantitos.servicios;
 
-import com.gigeroa.main.java.age_of_certantitos.entities.Posicion;
-import com.gigeroa.main.java.age_of_certantitos.services.CalculadorDistancia;
+import com.gigeroa.main.java.age_of_certantitos.entidades.Posicion;
+import com.gigeroa.main.java.age_of_certantitos.servicios.CalculadorDistancia;
 
 public abstract class CalculadorDistancia{
 

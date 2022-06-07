@@ -1,4 +1,4 @@
-package com.gigeroa.main.java.age_of_certantitos.exceptions;
+package com.gigeroa.main.java.age_of_certantitos.excepciones;
 
 public class ArmaNoExisteException extends Exception {
 

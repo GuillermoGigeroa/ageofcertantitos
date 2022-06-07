@@ -1,7 +1,7 @@
 package com.gigeroa.main.java.age_of_certantitos.util;
 
-import com.gigeroa.main.java.age_of_certantitos.entities.Arma;
-import com.gigeroa.main.java.age_of_certantitos.entities.Unidad;
+import com.gigeroa.main.java.age_of_certantitos.entidades.Arma;
+import com.gigeroa.main.java.age_of_certantitos.entidades.Unidad;
 
 public abstract class Util {
 	public static void escribir(Object esto) {

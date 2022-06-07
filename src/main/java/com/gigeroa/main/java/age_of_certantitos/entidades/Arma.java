@@ -1,4 +1,4 @@
-package com.gigeroa.main.java.age_of_certantitos.entities;
+package com.gigeroa.main.java.age_of_certantitos.entidades;
 
 public abstract class Arma {
 	protected final static Integer ESPADA_LIGERA_POTENCIA = 100;
