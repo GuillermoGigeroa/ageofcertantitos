@@ -1,8 +1,8 @@
-package com.gigeroa.main.java.age_of_certantitos.entidades.unidades;
+package com.gigeroa.main.java.age_of_certantitos.entities.units;
 
-import com.gigeroa.main.java.age_of_certantitos.entidades.armas.Espada;
+import com.gigeroa.main.java.age_of_certantitos.entities.Unidad;
+import com.gigeroa.main.java.age_of_certantitos.entities.weapons.Espada;
 import com.gigeroa.main.java.age_of_certantitos.exceptions.ArmaNoExisteException;
-import com.gigeroa.main.java.age_of_certantitos.entidades.Unidad;
 
 public class Espadachin extends Unidad  {
 	private Espada espada;

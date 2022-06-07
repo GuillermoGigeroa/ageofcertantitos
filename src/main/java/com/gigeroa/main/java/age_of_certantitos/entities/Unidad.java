@@ -1,4 +1,4 @@
-package com.gigeroa.main.java.age_of_certantitos.entidades;
+package com.gigeroa.main.java.age_of_certantitos.entities;
 
 import com.gigeroa.main.java.age_of_certantitos.util.Util;
 

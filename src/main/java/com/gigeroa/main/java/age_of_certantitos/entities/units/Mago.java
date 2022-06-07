@@ -1,6 +1,6 @@
-package com.gigeroa.main.java.age_of_certantitos.entidades.unidades;
+package com.gigeroa.main.java.age_of_certantitos.entities.units;
 
-import com.gigeroa.main.java.age_of_certantitos.entidades.Unidad;
+import com.gigeroa.main.java.age_of_certantitos.entities.Unidad;
 
 public class Mago extends Unidad {
 	private String nombre;

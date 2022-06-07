@@ -1,4 +1,4 @@
-package com.gigeroa.main.java.age_of_certantitos.entidades;
+package com.gigeroa.main.java.age_of_certantitos.entities;
 
 public class Posicion {
 	private Integer ejeX;
