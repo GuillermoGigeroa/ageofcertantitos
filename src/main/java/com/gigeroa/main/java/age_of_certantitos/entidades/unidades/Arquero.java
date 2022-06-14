@@ -6,13 +6,13 @@ import com.gigeroa.main.java.age_of_certantitos.servicios.CalculadorDistancia;
 
 public class Arquero extends Unidad {
 	private String nombre;
+	private final Double limiteDistancia = 10.0;
 	
 	public Arquero() {
 		setVida(ARQUERO_VIDA);
 		setNombre("Arquero");
-		setPotenciaDeAtaque(0);
+		setPotenciaDeAtaque(0.0);
 		setPosicion(new Posicion());
-		//TODO Arquero sin potencia de ataque
 	}
 
 	@Override
@@ -27,16 +27,16 @@ public class Arquero extends Unidad {
 	
 	@Override
 	public void atacar(Unidad unidad) {
-		Integer distancia = CalculadorDistancia.calcularDistancia(this.getPosicion(), unidad.getPosicion());
-		Integer potenciaDeAtaque = 1/distancia*100;
+		Double distancia = CalculadorDistancia.calcularDistancia(this.getPosicion(), unidad.getPosicion());
+		Double potenciaDeAtaque = 1/distancia*100;
 		
-		if (distancia >= 5) {
-			potenciaDeAtaque = 0;
+		if (distancia > limiteDistancia) {
+			potenciaDeAtaque = 0.0;
 		}
 		
 		setPotenciaDeAtaque(potenciaDeAtaque);
 		unidad.serAtacado(this);
-		setPotenciaDeAtaque(0);
+		setPotenciaDeAtaque(0.0);
 	}
 
 }

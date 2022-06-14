@@ -1,37 +1,37 @@
 package com.gigeroa.main.java.age_of_certantitos.entidades;
 
 public class Posicion {
-	private Integer ejeX;
-	private Integer ejeY;
+	private Double ejeX;
+	private Double ejeY;
 
 	public Posicion() {
-		this.ejeX = 0;
-		this.ejeY = 0;
+		this.ejeX = 0.0;
+		this.ejeY = 0.0;
 	}
 	
-	public Posicion(int ejeX) {
+	public Posicion(Double ejeX) {
 		this.ejeX = ejeX;
-		this.ejeY = 0;
+		this.ejeY = 0.0;
 	}
 	
-	public Posicion(int ejeX, int ejeY) {
+	public Posicion(Double ejeX, Double ejeY) {
 		this.ejeX = ejeX;
 		this.ejeY = ejeY;
 	}
 
-	public int getEjeX() {
+	public Double getEjeX() {
 		return ejeX;
 	}
 
-	public void setEjeX(int ejeX) {
+	public void setEjeX(Double ejeX) {
 		this.ejeX = ejeX;
 	}
 
-	public int getEjeY() {
+	public Double getEjeY() {
 		return ejeY;
 	}
 
-	public void setEjeY(int ejeY) {
+	public void setEjeY(Double ejeY) {
 		this.ejeY = ejeY;
 	}
 	

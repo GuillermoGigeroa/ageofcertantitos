@@ -6,12 +6,13 @@ import com.gigeroa.main.java.age_of_certantitos.servicios.CalculadorDistancia;
 
 public class Mago extends Unidad {
 	private String nombre;
+	private final Double limiteDistancia = 5.0;
+	
 	public Mago() {
 		setVida(MAGO_VIDA);
 		setNombre("Mago");
-		setPotenciaDeAtaque(0);
+		setPotenciaDeAtaque(0.0);
 		setPosicion(new Posicion());
-		//TODO Mago sin potencia de ataque
 	}
 
 	@Override
@@ -26,15 +27,15 @@ public class Mago extends Unidad {
 
 	@Override
 	public void atacar(Unidad unidad) {
-		Integer distancia = CalculadorDistancia.calcularDistancia(this.getPosicion(), unidad.getPosicion());
-		Integer potenciaDeAtaque = 1/distancia*200;
+		Double distancia = CalculadorDistancia.calcularDistancia(this.getPosicion(), unidad.getPosicion());
+		Double potenciaDeAtaque = 1/distancia*200;
 		
-		if (distancia >= 5) {
-			potenciaDeAtaque = 0;
+		if (distancia > limiteDistancia) {
+			potenciaDeAtaque = 0.0;
 		}
 		
 		setPotenciaDeAtaque(potenciaDeAtaque);
 		unidad.serAtacado(this);
-		setPotenciaDeAtaque(0);
+		setPotenciaDeAtaque(0.0);
 	}
 }

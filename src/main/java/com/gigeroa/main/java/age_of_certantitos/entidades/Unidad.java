@@ -3,36 +3,36 @@ package com.gigeroa.main.java.age_of_certantitos.entidades;
 import com.gigeroa.main.java.age_of_certantitos.util.Util;
 
 public abstract class Unidad implements Persona {
-	protected final static Integer GUERRERO_VIDA = 150;
-	protected final static Integer GUERRERO_POTENCIA = 75;
-	protected final static Integer MAGO_VIDA = 75;
-	protected final static Integer ARQUERO_VIDA = 100;
-	private Integer vida;
-	private Integer potenciaDeAtaque;
+	protected final static Double GUERRERO_VIDA = 150.0;
+	protected final static Double GUERRERO_POTENCIA = 75.0;
+	protected final static Double MAGO_VIDA = 75.0;
+	protected final static Double ARQUERO_VIDA = 100.0;
+	private Double vida;
+	private Double potenciaDeAtaque;
 	private Posicion posicion;
 
 	public Unidad() {
 
 	}
 
-	public Unidad(Integer vida, Integer potenciaDeAtaque) {
+	public Unidad(Double vida, Double potenciaDeAtaque) {
 		this.vida = vida;
 		this.potenciaDeAtaque = potenciaDeAtaque;
 	}
 
-	public Integer getVida() {
+	public Double getVida() {
 		return vida;
 	}
 
-	public void setVida(Integer vida) {
+	public void setVida(Double vida) {
 		this.vida = vida;
 	}
 
-	public Integer getPotenciaDeAtaque() {
+	public Double getPotenciaDeAtaque() {
 		return potenciaDeAtaque;
 	}
 
-	public void setPotenciaDeAtaque(Integer potenciaDeAtaque) {
+	public void setPotenciaDeAtaque(Double potenciaDeAtaque) {
 		this.potenciaDeAtaque = potenciaDeAtaque;
 	}
 	
@@ -41,16 +41,22 @@ public abstract class Unidad implements Persona {
 	}
 
 	public void serAtacado(Unidad unidad) {
-		int diferencia = getVida()-unidad.getPotenciaDeAtaque();
+		Util.escribir(this.getNombre()+" tiene "+this.getVida()+" de salud y ha sido atacado por "+unidad.getNombre());
+		Util.escribir(this.getNombre()+" ha sufrido "+unidad.getPotenciaDeAtaque()+" de daño");
+		
+		Double diferencia = getVida()-unidad.getPotenciaDeAtaque();
 		if (diferencia < 0) {
 			this.morir();
 		}
 		else {
 			setVida(getVida()-unidad.getPotenciaDeAtaque());
+			Util.escribir(this.getNombre()+" tiene "+this.getVida()+" de salud");
 		}
+		
 	}
 	
 	public void morir() {
+		this.vida = 0.0;
 		Util.escribir(getNombre() + " ha muerto.");
 	}
 

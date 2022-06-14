@@ -11,6 +11,7 @@ public class Espadachin extends Unidad  {
 
 	public Espadachin(Espada espada) throws ArmaNoExisteException {
 		if (espada != null) {
+			this.espada = espada;
 			setPotenciaDeAtaque(espada.getPotenciaDeAtaque());
 		} else {
 			throw new ArmaNoExisteException();
